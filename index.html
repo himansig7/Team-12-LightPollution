@@ -187,5 +187,57 @@
         </p>
       </article>
     </a>
+
+    <!-- CONNECT WITH US FORM -->
+    <div id="connect">
+      <h2>Learn More!</h2>
+      <div class="connect-container">
+          <div class="connect-para">
+              <p>Want to learn more about reducing light pollution and protect our night skies? 
+                Fill out the form below! By taking action, you can help preserve natural darkness, 
+                support wildlife,and improve human health. Every small change, from using shielded 
+                lighting to advocating for better policies, makes a difference. Together, we can 
+                restore the beauty of the night sky for future generations. </p>
+          </div>
+          <div class="connect-participants">
+              <p>✨ Lisa from Arizona wants to learn more!</p>
+              <p>✨ Jerry from Rhode Island wants to learn more!</p>
+              <p>✨ Mariam from Michigan wants to learn more!</p>
+              <p id="connect-count">🌆 3 people have joined!</p>
+          </div>
+          
+      </div>
+
+
+      <!-- Connect Form -->
+      <div class="form-container">
+          <form
+              id="connect-form"
+              title="connect-form"
+              action="https://formspree.io/f/meoaqrnd"
+              method="POST"
+          >
+
+
+              <!-- Name Input -->
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+
+              <!-- Email Input -->
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+              <!-- Home State Input -->
+              <label for="email">Home State:</label>
+              <input type="text" id="home-state" name="home-state" placeholder="Your Home State" required>
+
+              <!-- Submit button -->
+              <button id="connect-button" type="submit">Submit</button>
+          </form>
+      </div>      
+    </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
