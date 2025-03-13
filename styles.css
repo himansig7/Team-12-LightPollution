@@ -94,6 +94,17 @@ body.light-mode {
   padding-top: 90px;
 }
 
+body.light-mode .switch{
+  border-color: var(--accent-color-darkest);
+}
+
+body.light-mode .light-pollution-img{
+  border-color: var(--accent-color-darkest);
+}
+
+body.light-mode .slider:before{
+  background-color: var(--accent-color-darkest);
+}
 
 .switch {
   position: relative;
@@ -138,6 +149,10 @@ body.light-mode {
 
 input:checked + .slider {
   background-color: var(--accent-color-dark);
+}
+
+body.light-mode input:checked + .slider {
+  background-color: var(--accent-color-light);
 }
 
 input:focus + .slider {
@@ -222,6 +237,10 @@ a {
   margin-bottom: 10vw;
 }
 
+body.light-mode .hero{
+  margin-top: 10vw;
+}
+
 .hero-text {
   display: flex;
   width: 30vw;
@@ -234,7 +253,7 @@ a {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 40vw;
   background: linear-gradient(to bottom, rgba(13, 17, 23, 0), rgba(13, 17, 23, 1));
 }
 
@@ -260,13 +279,13 @@ h1 {
 }
 
 body.light-mode h1 {
-  color: #333;
+  color:var(--accent-color-dark);
   text-shadow: none;
 }
 
 h2 {
-  font-size: 32px;
-  color: var(--accent-color-light);
+  font-size: 2.5vw;
+  color: #ffffff;
   padding-top: 90px;
   margin-top: -70px;
   margin-bottom: 20px;
@@ -279,8 +298,8 @@ body.light-mode h2 {
 }
 
 h3 {
-  font-size: 24px;
-  color: var(--accent-color-light);
+  font-size: 2vw;
+  color: #ffffff;
   margin-top: 30px;
   margin-bottom: 15px;
   text-align: center;
@@ -291,8 +310,8 @@ body.light-mode h3 {
 }
 
 h4 {
-  font-size: 20px;
-  color: var(--accent-color-light);
+  font-size: 1.5vw;
+  color: #ffffff;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -302,6 +321,7 @@ body.light-mode h4 {
 }
 
 p {
+  font-weight: 300;
   margin-bottom: 20px;
   line-height: 1.6;
 }
@@ -642,14 +662,14 @@ details[open] {
 }
 
 summary {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 1.2vw;
+  font-weight: 400;
   cursor: pointer;
   list-style: none;
 }
 
 summary:hover {
-  color: #FFD700;
+  color: #146ec7;
 }
 
 /* Card layout for causes of light pollution */
