@@ -611,9 +611,8 @@ summary:hover {
   background-color: rgba(35, 25, 66, 0.7);
   border: 1px solid var(--accent-color-medium);
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 1.25rem;
   transition: all 0.3s ease;
-  width: 75%; /* Ensure it uses the full available width in the grid */
 }
 
 
