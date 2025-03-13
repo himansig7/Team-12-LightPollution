@@ -250,6 +250,10 @@ body.light-mode .hero{
   align-items: start;
 }
 
+.hero-p {
+  font-size: 1.5vw
+}
+
 #catch-phrase {
   font-weight: bold;
 }
@@ -290,7 +294,7 @@ body.light-mode h1 {
 }
 
 h2 {
-  font-size: 2.5vw;
+  font-size: 3vw;
   color: #ffffff;
   padding-top: 90px;
   margin-top: -70px;
@@ -304,7 +308,7 @@ body.light-mode h2 {
 }
 
 h3 {
-  font-size: 2vw;
+  font-size: 2.5vw;
   color: #ffffff;
   margin-top: 30px;
   margin-bottom: 15px;
@@ -480,6 +484,8 @@ article h3 {
   margin-top: 0;
   color: #ffffff;
   text-align: left;
+  font-size: 2vw
+
 }
 
 body.light-mode article h3 {
@@ -759,13 +765,15 @@ details[open] {
   padding-bottom: 20px;
 }
 
-.impact-header {
+.impact h3 {
   text-align: left;
   padding-left: 5px;
+  color: var(--accent-color-light);
+  font-size: 2.2vw
 }
 
 summary {
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   font-weight: 400;
   cursor: pointer;
   list-style: none;
@@ -813,7 +821,7 @@ body.light-mode .cause-card {
 }
 
 .cause-card h5 {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--accent-color-light);
   margin-top: 0;
   margin-bottom: 10px;
