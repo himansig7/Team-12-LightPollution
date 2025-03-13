@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Create light switch button
   const lightSwitch = document.createElement('button');
   lightSwitch.id = 'light-switch';
-  lightSwitch.innerHTML = '💡 Turn On Lights';
+  lightSwitch.innerHTML = '💡';
   document.body.appendChild(lightSwitch);
   
   // Create stars
@@ -45,9 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
   lightSwitch.addEventListener('click', function() {
     document.body.classList.toggle('light-mode');
     if (document.body.classList.contains('light-mode')) {
-      lightSwitch.innerHTML = '🌙 Turn Off Lights';
+      lightSwitch.innerHTML = '🌙 ';
     } else {
-      lightSwitch.innerHTML = '💡 Turn On Lights';
+      lightSwitch.innerHTML = '💡';
     }
   });
 });
