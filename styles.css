@@ -44,6 +44,8 @@ body.light-mode {
   background-color: transparent; /* No fill inside the switch */
 }
 
+
+
 .switch input { 
   opacity: 0;
   width: 0;
@@ -74,11 +76,11 @@ body.light-mode {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: var(--accent-color-dark);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px var(--accent-color-dark);
 }
 
 input:checked + .slider:before {
@@ -395,6 +397,7 @@ body.light-mode article h3 {
 body.light-mode #connect {
   background-color: rgba(255, 255, 255, 0.7);
   border: 1px solid #ccc;
+  margin-top: 100px; /* Adjust margin-top in light mode if needed */
 }
 
 .connect-container {
@@ -471,6 +474,7 @@ body.light-mode .form-container {
   align-self: center;
 }
 
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .content-container {
@@ -528,7 +532,7 @@ body.light-mode .form-container {
   --accent-color-medium: #011722;
   --accent-color-dark: #124164;
   --accent-color-darkest: #192742;
-  --accent-color-green: #28eb76;
+  --accent-color-green: #146ec7;
   /* Error Colors */
   --error-color: #f8bbd0;
   --error-color-border: #e63946;
