@@ -2,6 +2,55 @@
 <html lang="en">
 
 <head>
+    <title>Light Pollution</title> <!-- the content here will only show in the tab and in the metadata about the page -->
+    <link rel="icon" href="img/lightbulb-icon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!-- navbar
+      Purpose:
+      - Navigation bar that allows users to jump to different sections of the webpage
+      - Also holds buttons for user settings (dark mode, reduce motion)
+      -->
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#learn-more">Learn More</a></li>
+        <li><a href="https://darksky.org/ways-to-give/" class="donate" 
+              target="_blank" rel="noopener noreferrer">Donate!</a></li>
+      </ul>
+    </nav>
+
+    <!--- Headings --->
+    <div class="header-container">
+      <img src="img/night-sky-banner.jpg" alt="Beautiful night sky with stars" class="header-image" />
+      <div class="header-blur"></div>
+    </div>
+    
+    <div class="content-container">
+      <h1>Light Pollution</h1>
+      <h3>Dim the lights, save the night!</h3>
+      <div class="button-container">
+    </div>
+
+    <!--- About --->
+    <h2 id="about">About Light Pollution</h2>
+    <p>Light pollution is the overuse of artificial light hat brightens the night 
+        sky, reducing our ability to see stars and disrupting natural ecosystems. 
+        It affects wildlife by interfering with migration patterns, sleep cycles, 
+        and predator-prey relationships, especially for nocturnal animals. Humans 
+        also experience negative effects, such as disrupted sleep due to exposure 
+        to artificial light at night, which can impact overall health. By using 
+        shielded lighting, reducing unnecessary brightness, and promoting awareness, 
+        we can help restore the natural beauty of the night sky while protecting 
+
   <title>Light Pollution</title> <!-- the content here will only show in the tab and in the metadata about the page -->
   <link rel="icon" href="img/lightbulb-icon.png">
   <meta charset="utf-8">
@@ -309,7 +358,7 @@
 
     <!-- CONNECT WITH US FORM -->
     <div id="connect">
-      <h2>Learn More!</h2>
+      <h2 id="learn-more">Learn More!</h2>
       <div class="connect-container">
         <div class="connect-para">
           <p>Want to learn more about reducing light pollution and protect our night skies?
