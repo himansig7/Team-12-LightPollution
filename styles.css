@@ -7,14 +7,14 @@
   left: 0px;
   width: 100%;
   height: 80px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 a.navbar ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  align-items: center;
-  justify-content: center;
 }
 
 .navbar ul li {
@@ -246,6 +246,10 @@ body.light-mode .hero{
   width: 30vw;
   flex-direction: column;
   align-items: start;
+}
+
+#catch-phrase {
+  font-weight: bold;
 }
 
 .header-blur {
