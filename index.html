@@ -12,6 +12,22 @@
   </head>
 
   <body>
+    <!-- navbar
+      Purpose:
+      - Navigation bar that allows users to jump to different sections of the webpage
+      - Also holds buttons for user settings (dark mode, reduce motion)
+      -->
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#learn-more">Learn More</a></li>
+        <li><a href="https://darksky.org/ways-to-give/" class="donate" 
+              target="_blank" rel="noopener noreferrer">Donate!</a></li>
+      </ul>
+    </nav>
+
     <!--- Headings --->
     <div class="header-container">
       <img src="img/night-sky-banner.jpg" alt="Beautiful night sky with stars" class="header-image" />
@@ -22,11 +38,10 @@
       <h1>Light Pollution</h1>
       <h3>Dim the lights, save the night!</h3>
       <div class="button-container">
-        
-      </div>
+    </div>
 
     <!--- About --->
-    <h2>About My Topic</h2>
+    <h2 id="about">About Light Pollution</h2>
     <p>Light pollution is the overuse of artificial light hat brightens the night 
         sky, reducing our ability to see stars and disrupting natural ecosystems. 
         It affects wildlife by interfering with migration patterns, sleep cycles, 
@@ -224,7 +239,7 @@ slides[currentIndex].style.display = "block";
   <script src="script.js"></script>
     <!-- CONNECT WITH US FORM -->
     <div id="connect">
-      <h2>Learn More!</h2>
+      <h2 id="learn-more">Learn More!</h2>
       <div class="connect-container">
           <div class="connect-para">
               <p>Want to learn more about reducing light pollution and protect our night skies? 
