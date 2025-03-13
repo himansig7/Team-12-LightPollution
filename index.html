@@ -14,363 +14,367 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
-  <body>
-    <!-- navbar
+<body>
+  <!-- navbar
       Purpose:
       - Navigation bar that allows users to jump to different sections of the webpage
       - Also holds buttons for user settings (dark mode, reduce motion)
       -->
 
-    <nav class="navbar">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#impact">Impact</a></li>
-        <li><a href="#learn-more">Learn More</a></li>
-        <li><a href="https://darksky.org/ways-to-give/" class="donate" 
-              target="_blank" rel="noopener noreferrer">Donate!</a></li>
-      </ul>
-    </nav>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#learn-more">Learn More</a></li>
+      <li><a href="https://darksky.org/ways-to-give/" class="donate" target="_blank"
+          rel="noopener noreferrer">Donate!</a></li>
+    </ul>
+  </nav>
 
-</head>
+  </head>
 
-<body>
-  <!--- Headings --->
-  <div class="header-container">
-    <img src="img/night-sky-banner.jpg" alt="Beautiful night sky with stars" class="header-image" />
-    <div class="header-blur"></div>
-  </div>
+  <body>
+    <!--- Headings --->
+    <div class="header-container">
+      <img src="img/night-sky-banner.jpg" alt="Beautiful night sky with stars" class="header-image" />
+      <div class="header-blur"></div>
+    </div>
 
-  <div class="content-container">
-    <div class="hero">
-      <div class="hero-text">
-        <h1 class="hero-title">A Starless Sky</h1>
-        <p class="hero-p">
-          Learn more about light pollution and its impacts on the environment,
-          our health, and more.
+    <div class="content-container">
+      <div class="hero">
+        <div class="hero-text">
+          <h1 class="hero-title">A Starless Sky</h1>
+          <p class="hero-p">
+            Learn more about light pollution and its impacts on the environment,
+            our health, and more.
+          </p>
+          <p class="hero-p">
+            Remember: Dim the lights, save the night!
+          </p>
+        </div>
+        <div class="light-pollution-box">
+          <label class="switch">
+            <input type="checkbox" id="toggle-switch">
+            <span class="slider"></span>
+          </label>
+          <img src="img/sky1.png" class="light-pollution-img" alt="">
+        </div>
+      </div>
+
+      <!--- About --->
+      <div class='about'>
+        <h2>What is Light Pollution?</h2>
+        <p>Light pollution is the overuse of artificial light hat brightens the night
+          sky, reducing our ability to see stars and disrupting natural ecosystems.
+          It affects wildlife by interfering with migration patterns, sleep cycles,
+          and predator-prey relationships, especially for nocturnal animals.
         </p>
-        <p class="hero-p">
-          Remember: Dim the lights, save the night!
+        <p>Humans
+          also experience negative effects, such as disrupted sleep due to exposure
+          to artificial light at night, which can impact overall health. By using
+          shielded lighting, reducing unnecessary brightness, and promoting awareness,
+          we can help restore the natural beauty of the night sky while protecting
+          both wildlife and human well-being.
         </p>
       </div>
-      <div class="light-pollution-box">
-        <label class="switch">
-          <input type="checkbox" id="toggle-switch">
-          <span class="slider"></span>
-        </label>
-        <img src="img/sky1.png" class="light-pollution-img" alt="">
-      </div>
-    </div>
 
-    <!--- About --->
-    <div class='about'>
-      <h2>What is Light Pollution?</h2>
-      <p>Light pollution is the overuse of artificial light hat brightens the night
-        sky, reducing our ability to see stars and disrupting natural ecosystems.
-        It affects wildlife by interfering with migration patterns, sleep cycles,
-        and predator-prey relationships, especially for nocturnal animals.
-      </p>
-      <p>Humans
-        also experience negative effects, such as disrupted sleep due to exposure
-        to artificial light at night, which can impact overall health. By using
-        shielded lighting, reducing unnecessary brightness, and promoting awareness,
-        we can help restore the natural beauty of the night sky while protecting
-        both wildlife and human well-being.
-      </p>
-    </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0FXJUP6_O1w?si=G-TqgPuAMr0BkMbt"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0FXJUP6_O1w?si=G-TqgPuAMr0BkMbt"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    <div class="causes">
-      <h2>Causes of light pollution:</h2>
-      <div class="causes-grid">
-        <div class="cause-card">
-          <h5>Glare</h5>
-          <p>Uncomfortably bright lights that directly shine into the eye</p>
-        </div>
-        <div class="cause-card">
-          <h5>Light Trespass</h5>
-          <p>Unintended light that spills into other people's spaces</p>
-        </div>
-        <div class="cause-card">
-          <h5>Skyglow</h5>
-          <p>Light scattered into the atmosphere that brightens the night sky</p>
-        </div>
-        <div class="cause-card">
-          <h5>Light Clutter</h5>
-          <p>Excessive or confusing groupings of light sources</p>
+      <div class="causes">
+        <h2>Causes of light pollution:</h2>
+        <div class="causes-grid">
+          <div class="cause-card">
+            <h5>Glare</h5>
+            <p>Uncomfortably bright lights that directly shine into the eye</p>
+          </div>
+          <div class="cause-card">
+            <h5>Light Trespass</h5>
+            <p>Unintended light that spills into other people's spaces</p>
+          </div>
+          <div class="cause-card">
+            <h5>Skyglow</h5>
+            <p>Light scattered into the atmosphere that brightens the night sky</p>
+          </div>
+          <div class="cause-card">
+            <h5>Light Clutter</h5>
+            <p>Excessive or confusing groupings of light sources</p>
+          </div>
         </div>
       </div>
-    </div>
-    <h3>Let's look at the facts...</h3>
-    <div class="slideshow-container">
-      <button id="prev" class="nav-button">&#10094;</button>
-      <div class="slide fade">
-        <img src="img/map-progression.jpg" alt="map of light pollution in US overtime" />
-        <p>Levels of light pollution in the U.S. have increased rapidly over the years</p>
+      <div class="facts">
+        <h3>Let's look at the facts...</h3>
+        <div class="slideshow-container">
+          <button id="prev" class="nav-button">&#10094;</button>
+          <div class="slide fade">
+            <img src="img/map-progression.jpg" alt="map of light pollution in US overtime" />
+            <p>Levels of light pollution in the U.S. have increased rapidly over the years</p>
+          </div>
+          <div class="slide fade">
+            <img src="img/light-pollution-figure.jpeg" alt="levels of light pollution" />
+            <p>Starlight is greatly diminished, even in rural and suburban areas, impacting both people and wildlife</p>
+          </div>
+          <div class="slide fade">
+            <img src="img/pie-chart.jpeg" alt="percentage of world impacted by light pollution" />
+            <p>Light pollution is a global problem that requires a global solution</p>
+          </div>
+          <div class="slide fade">
+            <img src="img/light-polluted-sky1.jpg" alt="Light polluted sky" />
+            <p>LA's night sky is a prime example of light pollution</p>
+          </div>
+          <button id="next" class="nav-button">&#10095;</button>
+        </div>
       </div>
-      <div class="slide fade">
-        <img src="img/light-pollution-figure.jpeg" alt="levels of light pollution" />
-        <p>Starlight is greatly diminished, even in rural and suburban areas, impacting both people and wildlife</p>
-      </div>
-      <div class="slide fade">
-        <img src="img/pie-chart.jpeg" alt="percentage of world impacted by light pollution" />
-        <p>Light pollution is a global problem that requires a global solution</p>
-      </div>
-      <div class="slide fade">
-        <img src="img/light-polluted-sky1.jpg" alt="Light polluted sky" />
-        <p>LA's night sky is a prime example of light pollution</p>
-      </div>
-      <button id="next" class="nav-button">&#10095;</button>
-    </div>
 
-    <style>
-      .slideshow-container {
-        position: relative;
-        max-width: 400px;
-        margin: auto;
-        text-align: center;
-      }
+      <style>
+        .slideshow-container {
+          position: relative;
+          max-width: 400px;
+          margin: auto;
+          text-align: center;
+        }
 
-      .slide {
-        display: none;
-      }
+        .slide {
+          display: none;
+        }
 
-      img {
-        width: 100%;
-        border-radius: 8px;
-      }
+        img {
+          width: 100%;
+          border-radius: 8px;
+        }
 
-      .nav-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-10%);
-        background-color: transparent;
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 18px;
-      }
+        .nav-button {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-10%);
+          background-color: transparent;
+          color: white;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+          font-size: 18px;
+        }
 
-      #prev {
-        left: 0;
-      }
+        #prev {
+          left: 0;
+        }
 
-      #next {
-        right: 0;
-      }
-    </style>
+        #next {
+          right: 0;
+        }
+      </style>
 
-    <script>
-      let currentIndex = 0;
-      const slides = document.querySelectorAll(".slide");
-      const totalSlides = slides.length;
+      <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+        const totalSlides = slides.length;
 
-      document.getElementById("prev").addEventListener("click", () => changeSlide(-1));
-      document.getElementById("next").addEventListener("click", () => changeSlide(1));
+        document.getElementById("prev").addEventListener("click", () => changeSlide(-1));
+        document.getElementById("next").addEventListener("click", () => changeSlide(1));
 
-      function changeSlide(direction) {
-        slides[currentIndex].style.display = "none";
-        currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+        function changeSlide(direction) {
+          slides[currentIndex].style.display = "none";
+          currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+          slides[currentIndex].style.display = "block";
+        }
+
+        // Initialize first slide
         slides[currentIndex].style.display = "block";
-      }
-
-      // Initialize first slide
-      slides[currentIndex].style.display = "block";
-    </script>
+      </script>
 
 
-    <!--- Impact --->
-    <section id="impact">
-      <h2>Impact!</h2>
+      <!--- Impact --->
+      <section class="impact" id="impact">
+        <h2>Impact!</h2>
 
-      <details>
-        <summary>Lasting Effects of Light Pollution on Wildlife</summary>
+        <details>
+          <summary>Lasting Effects of Light Pollution on Wildlife</summary>
 
 
-        <h3 class="impact-header">Disrupted Sleep and Circadian Rhythms</h3>
-        <ul>
-          <li>Artificial light can disrupt the natural day-night cycle, which
-            affects when animals sleep, wake, migrate, and reproduce.</li>
-          <li>Birds that use moonlight to migrate may get lost and die.</li>
-        </ul>
+          <h3 class="impact-header">Disrupted Sleep and Circadian Rhythms</h3>
+          <ul>
+            <li>Artificial light can disrupt the natural day-night cycle, which
+              affects when animals sleep, wake, migrate, and reproduce.</li>
+            <li>Birds that use moonlight to migrate may get lost and die.</li>
+          </ul>
 
-        <h3 class="impact-header">Disorientation and Poor Navigation</h3>
-        <ul>
-          <li>Light pollution can confuse animals' navigation, making it harder
-            for them to find food, shelter, and mates.</li>
-          <li>Sea turtle hatchlings may be drawn to bright lights from roads
-            and houses instead of the ocean, where they need to go to survive.</li>
-        </ul>
+          <h3 class="impact-header">Disorientation and Poor Navigation</h3>
+          <ul>
+            <li>Light pollution can confuse animals' navigation, making it harder
+              for them to find food, shelter, and mates.</li>
+            <li>Sea turtle hatchlings may be drawn to bright lights from roads
+              and houses instead of the ocean, where they need to go to survive.</li>
+          </ul>
 
-        <h3 class="impact-header">Attraction to Artificial Lights</h3>
-        <ul>
-          <li>Many insects are attracted to artificial light, which can lead to them being
-            killed by light sources or becoming prey for predators.</li>
-          <li>Billions of moths and other nocturnal insects are killed each year by artificial light.</li>
-        </ul>
+          <h3 class="impact-header">Attraction to Artificial Lights</h3>
+          <ul>
+            <li>Many insects are attracted to artificial light, which can lead to them being
+              killed by light sources or becoming prey for predators.</li>
+            <li>Billions of moths and other nocturnal insects are killed each year by artificial light.</li>
+          </ul>
 
-        <h3 class="impact-header">Reduced Survival and Reproduction</h3>
-        <ul>
-          <li>Light pollution can lead to reduced survival and reproduction in many species.</li>
-          <li>By affecting the behavior of predators and prey, light pollution can alter food webs.</li>
-        </ul>
+          <h3 class="impact-header">Reduced Survival and Reproduction</h3>
+          <ul>
+            <li>Light pollution can lead to reduced survival and reproduction in many species.</li>
+            <li>By affecting the behavior of predators and prey, light pollution can alter food webs.</li>
+          </ul>
 
-        <img src="img/effects-on-wildlife.webp" alt="Bird surrounded by light pollution" />
-      </details>
+          <img src="img/effects-on-wildlife.webp" alt="Bird surrounded by light pollution" />
+        </details>
 
-      <details>
-        <summary>Lasting Effects of Light Pollution on Ecosystems</summary>
-        <h3 class="impact-header">Impacts on Predation & Reproduction</h3>
-        <ul>
-          <li>Light pollution can attract prey species to areas with artificial light,
-            making them more vulnerable to predators.</li>
-          <li>Disrupted circadian rhythms can negatively affect reproductive success
-            by altering hormone cycles and timing of breeding activities.</li>
-        </ul>
+        <details>
+          <summary>Lasting Effects of Light Pollution on Ecosystems</summary>
+          <h3 class="impact-header">Impacts on Predation & Reproduction</h3>
+          <ul>
+            <li>Light pollution can attract prey species to areas with artificial light,
+              making them more vulnerable to predators.</li>
+            <li>Disrupted circadian rhythms can negatively affect reproductive success
+              by altering hormone cycles and timing of breeding activities.</li>
+          </ul>
 
-        <h3 class="impact-header">Impacts on Plant Life</h3>
-        <ul>
-          <li>Artificial light at night can trick plants into thinking it's daytime, causing
-            them to bud and flower earlier in the spring, potentially leading to issues with
-            <br>frost damage and impacting the timing of pollination.
-          </li>
-          <li>Many nocturnal pollinators like moths and bats are disoriented by artificial light,
-            leading to decreased pollination of night-blooming flowers and <br> decreased seed dispersal.</li>
-          <li>Continuous exposure to artificial light can cause stress on plant systems, impacting their
-            photosynthetic efficiency and overall growth.</li>
-        </ul>
+          <h3 class="impact-header">Impacts on Plant Life</h3>
+          <ul>
+            <li>Artificial light at night can trick plants into thinking it's daytime, causing
+              them to bud and flower earlier in the spring, potentially leading to issues with
+              <br>frost damage and impacting the timing of pollination.
+            </li>
+            <li>Many nocturnal pollinators like moths and bats are disoriented by artificial light,
+              leading to decreased pollination of night-blooming flowers and <br> decreased seed dispersal.</li>
+            <li>Continuous exposure to artificial light can cause stress on plant systems, impacting their
+              photosynthetic efficiency and overall growth.</li>
+          </ul>
 
-        <h3 class="impact-header">Impacts on Habitat Loss</h3>
-        <ul>
-          <li>Some animals actively avoid illuminated areas, effectively excluding them from potential habitat.</li>
-          <li>Nocturnal rodents such as some species of mice and shrews may avoid
-            brightly lit areas, reducing their access to food and shelter.</li>
-          <li>When animals avoid lit areas, it can effectively create barriers within their natural
-            range, dividing their habitat into smaller, less viable sections.</li>
-        </ul>
+          <h3 class="impact-header">Impacts on Habitat Loss</h3>
+          <ul>
+            <li>Some animals actively avoid illuminated areas, effectively excluding them from potential habitat.</li>
+            <li>Nocturnal rodents such as some species of mice and shrews may avoid
+              brightly lit areas, reducing their access to food and shelter.</li>
+            <li>When animals avoid lit areas, it can effectively create barriers within their natural
+              range, dividing their habitat into smaller, less viable sections.</li>
+          </ul>
 
-        <img src="img/effects-on-ecosystems.jpg" alt="Ecosystem affected by light pollution" />
-      </details>
+          <img src="img/effects-on-ecosystems.jpg" alt="Ecosystem affected by light pollution" />
+        </details>
 
-      <details>
-        <summary>Lasting Effects of Light Pollution on Humans</summary>
-        <h3 class="impact-header">Melatonin Disruption & Sleep Problems</h3>
-        <ul>
-          <li>Exposure to artificial light at night, especially in the blue light spectrum,
-            inhibits the body's natural production of melatonin, a hormone <br>crucial for sleep regulation.</li>
-          <li>Reduced melatonin levels due to light pollution can lead to difficulty falling asleep,
-            disrupted sleep patterns, and reduced sleep quality.</li>
-        </ul>
+        <details>
+          <summary>Lasting Effects of Light Pollution on Humans</summary>
+          <h3 class="impact-header">Melatonin Disruption & Sleep Problems</h3>
+          <ul>
+            <li>Exposure to artificial light at night, especially in the blue light spectrum,
+              inhibits the body's natural production of melatonin, a hormone <br>crucial for sleep regulation.</li>
+            <li>Reduced melatonin levels due to light pollution can lead to difficulty falling asleep,
+              disrupted sleep patterns, and reduced sleep quality.</li>
+          </ul>
 
-        <h3 class="impact-header">Circadian Rhythm Disruption</h3>
-        <ul>
-          <li>Light pollution disrupts the body's natural circadian rhythm, which is synchronized
-            with day and night cycles, potentially impacting various <br>bodily functions beyond sleep.</li>
-          <li>A disrupted circadian rhythm can impact hormone regulation— increasing
-            the risk of diseases— as well as mental health and metabolism,<br> potentially leading to obesity.</li>
-        </ul>
+          <h3 class="impact-header">Circadian Rhythm Disruption</h3>
+          <ul>
+            <li>Light pollution disrupts the body's natural circadian rhythm, which is synchronized
+              with day and night cycles, potentially impacting various <br>bodily functions beyond sleep.</li>
+            <li>A disrupted circadian rhythm can impact hormone regulation— increasing
+              the risk of diseases— as well as mental health and metabolism,<br> potentially leading to obesity.</li>
+          </ul>
 
-        <h3 class="impact-header">Potential Health Concerns</h3>
-        <ul>
-          <li>Studies have linked chronic light pollution exposure to potential health issues like
-            increased risk of depression, obesity, diabetes, cardiovascular <br>disease, reproductive problems
-            and cancers.</li>
-          <li>Moreover, numerous studies have linked working the night shift and exposure to light at night to
-            increased risks for breast and prostate cancers<br> and other health problems.</li>
-        </ul>
+          <h3 class="impact-header">Potential Health Concerns</h3>
+          <ul>
+            <li>Studies have linked chronic light pollution exposure to potential health issues like
+              increased risk of depression, obesity, diabetes, cardiovascular <br>disease, reproductive problems
+              and cancers.</li>
+            <li>Moreover, numerous studies have linked working the night shift and exposure to light at night to
+              increased risks for breast and prostate cancers<br> and other health problems.</li>
+          </ul>
 
-        <img src="img/effects-on-humans.jpg" alt="Person affected by light pollution" />
-      </details>
-    </section>
+          <img src="img/effects-on-humans.jpg" alt="Person affected by light pollution" />
+        </details>
+      </section>
 
-    <script src="script.js"></script>
+      <script src="script.js"></script>
 
-    <!--- News --->
-    <h2>Recent News</h2>
+      <!--- News --->
+      <div class="news">
+        <h2>Recent News</h2>
 
-    <a class="" href="https://education.nationalgeographic.org/resource/light-pollution/">
-      <article>
-        <h3>Light Pollution - National Geographic</h3>
-        <p>
-          Explore the dangerous effects of light pollution, from impacting
-          wildlife to harming human health, and learn how we can make a
-          difference.
-        </p>
-      </article>
+        <a class="" href="https://education.nationalgeographic.org/resource/light-pollution/">
+          <article>
+            <h3>Light Pollution - National Geographic</h3>
+            <p>
+              Explore the dangerous effects of light pollution, from impacting
+              wildlife to harming human health, and learn how we can make a
+              difference.
+            </p>
+          </article>
 
-    </a>
-    <a class=""
-      href="https://thinklandscape.globallandscapesforum.org/68200/light-pollution-is-it-too-late-to-switch-off-the-lights/?gad_source=1&gclid=CjwKCAiA5Ka9BhB5EiwA1ZVtvDDc5L4QqlDe5FjuCbgtsLvbLRndnR5H_oEka6djNRf3LOm-6gjPphoC7vsQAvD_BwE">
-      <article>
-        <h3>Is it too late to switch off the lights? - Think Landscape</h3>
-        <p>
-          Dive deeper into the factors that contribute to light pollution, and
-          learn what better lighting can look like.
-        </p>
-      </article>
-    </a>
+        </a>
+        <a class=""
+          href="https://thinklandscape.globallandscapesforum.org/68200/light-pollution-is-it-too-late-to-switch-off-the-lights/?gad_source=1&gclid=CjwKCAiA5Ka9BhB5EiwA1ZVtvDDc5L4QqlDe5FjuCbgtsLvbLRndnR5H_oEka6djNRf3LOm-6gjPphoC7vsQAvD_BwE">
+          <article>
+            <h3>Is it too late to switch off the lights? - Think Landscape</h3>
+            <p>
+              Dive deeper into the factors that contribute to light pollution, and
+              learn what better lighting can look like.
+            </p>
+          </article>
+        </a>
 
-    <a class="" href="https://www.sandiegobirdalliance.org/what-we-do/lights-out-san-diego-english.html">
-      <article>
-        <h3>Lights Out, San Diego!</h3>
-        <p>
-          Join the campaign to build awareness about how light pollution impacts
-          migrating birds and other wildlife.
-        </p>
-      </article>
-    </a>
+        <a class="" href="https://www.sandiegobirdalliance.org/what-we-do/lights-out-san-diego-english.html">
+          <article>
+            <h3>Lights Out, San Diego!</h3>
+            <p>
+              Join the campaign to build awareness about how light pollution impacts
+              migrating birds and other wildlife.
+            </p>
+          </article>
+        </a>
+      </div>
 
-    <!-- CONNECT WITH US FORM -->
-    <div id="connect">
-      <h2 id="learn-more">Learn More!</h2>
-      <div class="connect-container">
-        <div class="connect-para">
-          <p>Want to learn more about reducing light pollution and protect our night skies?
-            Fill out the form below! By taking action, you can help preserve natural darkness,
-            support wildlife,and improve human health. Every small change, from using shielded
-            lighting to advocating for better policies, makes a difference. Together, we can
-            restore the beauty of the night sky for future generations. </p>
+      <!-- CONNECT WITH US FORM -->
+      <div id="connect">
+        <h2 id="learn-more">Learn More!</h2>
+        <div class="connect-container">
+          <div class="connect-para">
+            <p>Want to learn more about reducing light pollution and protect our night skies?
+              Fill out the form below! By taking action, you can help preserve natural darkness,
+              support wildlife,and improve human health. Every small change, from using shielded
+              lighting to advocating for better policies, makes a difference. Together, we can
+              restore the beauty of the night sky for future generations. </p>
+          </div>
+          <div class="connect-participants">
+            <p>✨ Lisa from Arizona wants to learn more!</p>
+            <p>✨ Jerry from Rhode Island wants to learn more!</p>
+            <p>✨ Mariam from Michigan wants to learn more!</p>
+            <p id="connect-count">🌆 3 people have joined!</p>
+          </div>
+
         </div>
-        <div class="connect-participants">
-          <p>✨ Lisa from Arizona wants to learn more!</p>
-          <p>✨ Jerry from Rhode Island wants to learn more!</p>
-          <p>✨ Mariam from Michigan wants to learn more!</p>
-          <p id="connect-count">🌆 3 people have joined!</p>
-        </div>
 
+
+        <!-- Connect Form -->
+        <div class="form-container">
+          <form id="connect-form" title="connect-form" action="https://formspree.io/f/meoaqrnd" method="POST">
+
+
+            <!-- Name Input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <!-- Home State Input -->
+            <label for="email">Home State:</label>
+            <input type="text" id="home-state" name="home-state" placeholder="Your Home State" required>
+
+            <!-- Submit button -->
+            <button id="connect-button" type="submit">Submit</button>
+          </form>
+        </div>
       </div>
 
 
-      <!-- Connect Form -->
-      <div class="form-container">
-        <form id="connect-form" title="connect-form" action="https://formspree.io/f/meoaqrnd" method="POST">
-
-
-          <!-- Name Input -->
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Your Name" required>
-
-
-          <!-- Email Input -->
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-          <!-- Home State Input -->
-          <label for="email">Home State:</label>
-          <input type="text" id="home-state" name="home-state" placeholder="Your Home State" required>
-
-          <!-- Submit button -->
-          <button id="connect-button" type="submit">Submit</button>
-        </form>
-      </div>
-    </div>
-
-
-    <script src="index.js"></script>
-</body>
+      <script src="index.js"></script>
+  </body>
 
 </html>
