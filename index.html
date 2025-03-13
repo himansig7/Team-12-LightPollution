@@ -13,12 +13,18 @@
 
   <body>
     <!--- Headings --->
-    <img />
-    <!-- if you want to add an image, use this tag and link to the actual image location in your project with the src attribute -->
-    <h1>Light Pollution</h1>
-    <h3>Dim the lights, save the night!</h3>
-    <button type="button">How to Help</button>
-    <button type="button">Lights Out, San Diego</button>
+    <div class="header-container">
+      <img src="img/night-sky-banner.jpg" alt="Beautiful night sky with stars" class="header-image" />
+      <div class="header-blur"></div>
+    </div>
+    
+    <div class="content-container">
+      <h1>Light Pollution</h1>
+      <h3>Dim the lights, save the night!</h3>
+      <div class="button-container">
+        <button type="button">How to Help</button>
+        <button type="button">Lights Out, San Diego</button>
+      </div>
 
     <!--- About --->
     <h2>About My Topic</h2>
@@ -238,6 +244,7 @@
       </div>      
     </div>
 
+    
     <script src="index.js"></script>
   </body>
 </html>
