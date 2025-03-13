@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<head>
-    <title>Light Pollution</title> <!-- the content here will only show in the tab and in the metadata about the page -->
-    <link rel="icon" href="img/lightbulb-icon.png">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link href="reset.css" rel="stylesheet" type="text/css" />
-    <link href="styles.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="styles.css">
-  </head>
 
-  <body>
-    <!--- Headings --->
-    <div class="header-container">
-      <img src="img/night-sky-banner.jpg" alt="Beautiful night sky with stars" class="header-image" />
-      <div class="header-blur"></div>
-    </div>
-    
-    <div class="content-container">
-      <h1>Light Pollution</h1>
-      <h3>Dim the lights, save the night!</h3>
-      <div class="button-container">
-        
+<head>
+  <title>Light Pollution</title> <!-- the content here will only show in the tab and in the metadata about the page -->
+  <link rel="icon" href="img/lightbulb-icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <!--- Headings --->
+  <div class="header-container">
+    <img src="img/night-sky-banner.jpg" alt="Beautiful night sky with stars" class="header-image" />
+    <div class="header-blur"></div>
+  </div>
+
+  <div class="content-container">
+    <div class="hero">
+      <div class="hero-text">
+        <h1 class="hero-title">A Starless Sky</h1>
+        <p class="hero-p">
+          Learn more about light pollution and its impacts on the environment,
+          our health, and more.
+        </p>
+        <p class="hero-p">
+          Remember: Dim the lights, save the night!
+        </p>
       </div>
+      <div class="light-pollution-box">
+        <label class="switch">
+          <input type="checkbox" id="toggle-switch">
+          <span class="slider"></span>
+        </label>
+        <img src="img/sky1.png" class="light-pollution-img" alt="">
+      </div>
+    </div>
 
     <!--- About --->
+<<<<<<< Updated upstream
     <h2>What is Light Pollution?</h2>
     <p>Light pollution is the overuse of artificial light hat brightens the night 
         sky, reducing our ability to see stars and disrupting natural ecosystems. 
@@ -35,39 +55,57 @@
         to artificial light at night, which can impact overall health. By using 
         shielded lighting, reducing unnecessary brightness, and promoting awareness, 
         we can help restore the natural beauty of the night sky while protecting 
+=======
+    <div class='about'>
+      <h2>What is Light Pollution?</h2>
+      <p>Light pollution is the overuse of artificial light hat brightens the night
+        sky, reducing our ability to see stars and disrupting natural ecosystems.
+        It affects wildlife by interfering with migration patterns, sleep cycles,
+        and predator-prey relationships, especially for nocturnal animals.
+      </p>
+      <p>Humans
+        also experience negative effects, such as disrupted sleep due to exposure
+        to artificial light at night, which can impact overall health. By using
+        shielded lighting, reducing unnecessary brightness, and promoting awareness,
+        we can help restore the natural beauty of the night sky while protecting
+>>>>>>> Stashed changes
         both wildlife and human well-being.
-    </p>
+      </p>
+    </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0FXJUP6_O1w?si=G-TqgPuAMr0BkMbt" 
-    title="YouTube video player" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0FXJUP6_O1w?si=G-TqgPuAMr0BkMbt"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <h4>Causes of light pollution:</h4>
-<div class="causes-grid">
-  <div class="cause-card">
-    <h5>Glare</h5>
-    <p>Uncomfortably bright lights that directly shine into the eye</p>
-  </div>
-  <div class="cause-card">
-    <h5>Light Trespass</h5>
-    <p>Unintended light that spills into other people's spaces</p>
-  </div>
-  <div class="cause-card">
-    <h5>Skyglow</h5>
-    <p>Light scattered into the atmosphere that brightens the night sky</p>
-  </div>
-  <div class="cause-card">
-    <h5>Light Clutter</h5>
-    <p>Excessive or confusing groupings of light sources</p>
-  </div>
-</div>
+    <div class="causes">
+      <h2>Causes of light pollution:</h2>
+      <div class="causes-grid">
+        <div class="cause-card">
+          <h5>Glare</h5>
+          <p>Uncomfortably bright lights that directly shine into the eye</p>
+        </div>
+        <div class="cause-card">
+          <h5>Light Trespass</h5>
+          <p>Unintended light that spills into other people's spaces</p>
+        </div>
+        <div class="cause-card">
+          <h5>Skyglow</h5>
+          <p>Light scattered into the atmosphere that brightens the night sky</p>
+        </div>
+        <div class="cause-card">
+          <h5>Light Clutter</h5>
+          <p>Excessive or confusing groupings of light sources</p>
+        </div>
+      </div>
+    </div>
     <!--- Data --->
     <h3>Let's look at the facts...</h3>
-<div class="slideshow-container">
-    <button id="prev" class="nav-button">&#10094;</button>
-    <div class="slide fade">
+    <div class="slideshow-container">
+      <button id="prev" class="nav-button">&#10094;</button>
+      <div class="slide fade">
         <img src="img/map-progression.jpg" alt="map of light pollution in US overtime" />
+<<<<<<< Updated upstream
         <p>Levels of light pollution in the U.S. have increased rapidly over the years</p>
     </div>
     <div class="slide fade">
@@ -81,72 +119,84 @@
     <div class ="slide fade">
         <img src="img/light-polluted-sky1.jpg" alt="Light polluted sky" />
           <p>LA's night sky is a prime example of light pollution</p>
+=======
+        <p>Levels of light pollution in the U.S. have increased rapidly over the years.</p>
+      </div>
+      <div class="slide fade">
+        <img src="img/light-pollution-figure.jpeg" alt="levels of light pollution" />
+        <p>Starlight is greatly diminished, even in rural and suburban areas, impacting both people and wildlife.</p>
+      </div>
+      <div class="slide fade">
+        <img src="img/pie-chart.jpeg" alt="percentage of world impacted by light pollution" />
+        <p>Light pollution is a global problem that requires a global solution.</p>
+      </div>
+      <button id="next" class="nav-button">&#10095;</button>
+>>>>>>> Stashed changes
     </div>
-    <button id="next" class="nav-button">&#10095;</button>
-</div>
 
-<style>
-.slideshow-container {
-    position: relative;
-    max-width: 400px;
-    margin: auto;
-    text-align: center;
-}
+    <style>
+      .slideshow-container {
+        position: relative;
+        max-width: 400px;
+        margin: auto;
+        text-align: center;
+      }
 
-.slide {
-    display: none;
-}
+      .slide {
+        display: none;
+      }
 
-img {
-    width: 100%;
-    border-radius: 8px;
-}
+      img {
+        width: 100%;
+        border-radius: 8px;
+      }
 
-.nav-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-}
+      .nav-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+      }
 
-#prev {
-    left: 0;
-}
+      #prev {
+        left: 0;
+      }
 
-#next {
-    right: 0;
-}
-</style>
+      #next {
+        right: 0;
+      }
+    </style>
 
-<script>
-let currentIndex = 0;
-const slides = document.querySelectorAll(".slide");
-const totalSlides = slides.length;
+    <script>
+      let currentIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+      const totalSlides = slides.length;
 
-document.getElementById("prev").addEventListener("click", () => changeSlide(-1));
-document.getElementById("next").addEventListener("click", () => changeSlide(1));
+      document.getElementById("prev").addEventListener("click", () => changeSlide(-1));
+      document.getElementById("next").addEventListener("click", () => changeSlide(1));
 
-function changeSlide(direction) {
-    slides[currentIndex].style.display = "none";
-    currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
-    slides[currentIndex].style.display = "block";
-}
+      function changeSlide(direction) {
+        slides[currentIndex].style.display = "none";
+        currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+        slides[currentIndex].style.display = "block";
+      }
 
-// Initialize first slide
-slides[currentIndex].style.display = "block";
-</script>
+      // Initialize first slide
+      slides[currentIndex].style.display = "block";
+    </script>
 
 
     <!--- Impact --->
     <section id="impact">
       <h2>Impact!</h2>
-  
+
       <details>
+<<<<<<< Updated upstream
           <summary>Lasting Effects of Light Pollution on Wildlife</summary>
           
   
@@ -179,9 +229,41 @@ slides[currentIndex].style.display = "block";
           </ul>
   
           <img src="img/effects-on-wildlife.webp" alt="Bird surrounded by light pollution" />
+=======
+        <summary>Lasting Effects of Light Pollution on Wildlife</summary>
+        <img src="img/light-polluted-sky1.jpg" alt="Light polluted sky" />
+        <p>A heavily light polluted sky.</p>
+
+        <h3>Disrupted Sleep and Circadian Rhythms</h3>
+        <ul>
+          <li>Artificial light can disrupt natural day-night cycles.</li>
+          <li>Birds using moonlight to migrate may get lost.</li>
+        </ul>
+
+        <h3>Disorientation and Poor Navigation</h3>
+        <ul>
+          <li>Light pollution confuses animal navigation.</li>
+          <li>Sea turtle hatchlings may head towards road lights instead of the ocean.</li>
+        </ul>
+
+        <h3>Attraction to Artificial Lights</h3>
+        <ul>
+          <li>Insects drawn to artificial light may become prey.</li>
+          <li>Billions of nocturnal insects are killed annually by artificial lights.</li>
+        </ul>
+
+        <h3>Reduced Survival and Reproduction</h3>
+        <ul>
+          <li>Light pollution affects predator-prey dynamics.</li>
+          <li>It alters food webs and reduces reproductive success.</li>
+        </ul>
+
+        <img src="img/effects-on-wildlife.webp" alt="Bird surrounded by light pollution" />
+>>>>>>> Stashed changes
       </details>
-  
+
       <details>
+<<<<<<< Updated upstream
           <summary>Lasting Effects of Light Pollution on Ecosystems</summary>
           <h3 class="impact-header">Impacts on Predation & Reproduction</h3>
           <ul>
@@ -212,9 +294,32 @@ slides[currentIndex].style.display = "block";
           </ul>
   
           <img src="img/effects-on-ecosystems.jpg" alt="Ecosystem affected by light pollution" />
+=======
+        <summary>Lasting Effects of Light Pollution on Ecosystems</summary>
+        <h3>Impacts on Predation & Reproduction</h3>
+        <ul>
+          <li>Artificial light attracts prey, making them easy targets.</li>
+          <li>Disrupted rhythms affect breeding success.</li>
+        </ul>
+
+        <h3>Impacts on Plant Life</h3>
+        <ul>
+          <li>Artificial light can lead to premature budding.</li>
+          <li>Nocturnal pollinators become disoriented, reducing pollination.</li>
+        </ul>
+
+        <h3>Impacts on Habitat Loss</h3>
+        <ul>
+          <li>Bright areas become uninhabitable for certain species.</li>
+          <li>Divides habitats into smaller, isolated sections.</li>
+        </ul>
+
+        <img src="img/effects-on-ecosystems.jpg" alt="Ecosystem affected by light pollution" />
+>>>>>>> Stashed changes
       </details>
-  
+
       <details>
+<<<<<<< Updated upstream
           <summary>Lasting Effects of Light Pollution on Humans</summary>
           <h3 class="impact-header">Melatonin Disruption & Sleep Problems</h3>
           <ul>
@@ -290,57 +395,79 @@ slides[currentIndex].style.display = "block";
     </article>
   </a>
 
+=======
+        <summary>Lasting Effects of Light Pollution on Humans</summary>
+        <h3>Melatonin Disruption & Sleep Problems</h3>
+        <ul>
+          <li>Artificial light at night reduces melatonin production.</li>
+          <li>Can lead to insomnia and poor sleep quality.</li>
+        </ul>
+
+        <h3>Circadian Rhythm Disruption</h3>
+        <ul>
+          <li>Impacts hormone regulation and mental health.</li>
+          <li>Can increase obesity risk.</li>
+        </ul>
+
+        <h3>Potential Health Concerns</h3>
+        <ul>
+          <li>Links to depression, cardiovascular disease, and cancers.</li>
+          <li>Night shift work exposure is associated with higher health risks.</li>
+        </ul>
+
+        <img src="img/effects-on-humans.jpg" alt="Person affected by light pollution" />
+      </details>
+    </section>
+
+    <script src="script.js"></script>
+>>>>>>> Stashed changes
     <!-- CONNECT WITH US FORM -->
     <div id="connect">
       <h2>Learn More!</h2>
       <div class="connect-container">
-          <div class="connect-para">
-              <p>Want to learn more about reducing light pollution and protect our night skies? 
-                Fill out the form below! By taking action, you can help preserve natural darkness, 
-                support wildlife,and improve human health. Every small change, from using shielded 
-                lighting to advocating for better policies, makes a difference. Together, we can 
-                restore the beauty of the night sky for future generations. </p>
-          </div>
-          <div class="connect-participants">
-              <p>✨ Lisa from Arizona wants to learn more!</p>
-              <p>✨ Jerry from Rhode Island wants to learn more!</p>
-              <p>✨ Mariam from Michigan wants to learn more!</p>
-              <p id="connect-count">🌆 3 people have joined!</p>
-          </div>
-          
+        <div class="connect-para">
+          <p>Want to learn more about reducing light pollution and protect our night skies?
+            Fill out the form below! By taking action, you can help preserve natural darkness,
+            support wildlife,and improve human health. Every small change, from using shielded
+            lighting to advocating for better policies, makes a difference. Together, we can
+            restore the beauty of the night sky for future generations. </p>
+        </div>
+        <div class="connect-participants">
+          <p>✨ Lisa from Arizona wants to learn more!</p>
+          <p>✨ Jerry from Rhode Island wants to learn more!</p>
+          <p>✨ Mariam from Michigan wants to learn more!</p>
+          <p id="connect-count">🌆 3 people have joined!</p>
+        </div>
+
       </div>
 
 
       <!-- Connect Form -->
       <div class="form-container">
-          <form
-              id="connect-form"
-              title="connect-form"
-              action="https://formspree.io/f/meoaqrnd"
-              method="POST"
-          >
+        <form id="connect-form" title="connect-form" action="https://formspree.io/f/meoaqrnd" method="POST">
 
 
-              <!-- Name Input -->
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <!-- Name Input -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
 
 
-              <!-- Email Input -->
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <!-- Email Input -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-              <!-- Home State Input -->
-              <label for="email">Home State:</label>
-              <input type="text" id="home-state" name="home-state" placeholder="Your Home State" required>
+          <!-- Home State Input -->
+          <label for="email">Home State:</label>
+          <input type="text" id="home-state" name="home-state" placeholder="Your Home State" required>
 
-              <!-- Submit button -->
-              <button id="connect-button" type="submit">Submit</button>
-          </form>
-      </div>      
+          <!-- Submit button -->
+          <button id="connect-button" type="submit">Submit</button>
+        </form>
+      </div>
     </div>
 
-    
+
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>

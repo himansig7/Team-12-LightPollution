@@ -12,7 +12,7 @@ body {
   /* Customize the default size, color, and font for text*/
   font-size: 16px;
   color: #ffffff;
-  font-family: Tahoma, sans-serif;
+  font-family: Jost, sans-serif;
   /* Put space around the edges of the webpage */
   margin: 0;
   padding: 0;
@@ -33,6 +33,75 @@ body.light-mode {
   color: #333333;
 }
 
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2vw;  /* Width of the switch container */
+  height: 4vw; /* Height of the switch container */
+  border-radius: 50px; /* Rounded corners for the rectangle */
+  border: 2px solid white; /* White border around the switch */
+  background-color: transparent; /* No fill inside the switch */
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+  border-radius: 50px; /* Rounded edges for the slider */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 1.8vw;  /* Circle width */
+  height: 1.8vw; /* Circle height */
+  left: 0.1vw;    /* Ensure it's aligned from the left */
+  top: 0.1vw;     /* Ensure it's aligned from the top */
+  border-radius: 50%; /* Makes the circle shape */
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateY(2vw); /* Move the circle down */
+}
+
+/* Optional: Rounded sliders */
+.slider.round {
+  border-radius: 1vw; /* Rounded corners for the slider */
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.light-pollution-box{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  align-items: end;
+}
+
+
 /*** Header image ***
  - Full width with blurred bottom edge
 ***/
@@ -46,11 +115,55 @@ body.light-mode {
   display: block; /* Ensure it's visible by default */
 }
 
-.header-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+
+p {
+  font-size: 1.2vw;
+  font-weight: 200;
+}
+
+h1,
+h2,
+a {
+  font-family: Jost;
+}
+
+
+.toggle {
+  width: 9vw;
+  height: 9vw;
+  align-self:flex-end;
+  cursor: pointer;
+}
+
+.light-pollution-img {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 5%;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 0.2vw;
+  margin: 0; /* Ensure no margin/padding around the image */
+  padding: 0; /* Ensure no padding around the image */
+  object-fit: cover; /* Ensure the image fills the container without distortion */
+}
+  
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3vw;
+  align-items: top;
+  margin-top: -10vw;
+  margin-bottom: 10vw;
+}
+
+.hero-text {
+  display: flex;
+  width: 30vw;
+  flex-direction: column;
+  align-items: start;
 }
 
 .header-blur {
@@ -74,7 +187,7 @@ body.light-mode .header-container {
  paragraphs (p), links (a), and buttons
 ***/
 h1 {
-  font-size: 42px;
+  font-size: 4vw;
   color: #ffffff;
   text-align: center;
   margin-top: 40px;
@@ -88,8 +201,8 @@ body.light-mode h1 {
 }
 
 h2 {
-  font-size: 32px;
-  color: var(--accent-color-light);
+  font-size: 2.5vw;
+  color: #ffffff;
   margin-top: 50px;
   margin-bottom: 20px;
   border-bottom: 3px solid var(--accent-color-medium);
@@ -152,6 +265,17 @@ a:hover {
   gap: 20px;
   margin: 20px 0 40px 0;
 }
+
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 60vw;
+  gap: 0.5vw;
+}
+
+
 
 /* Light switch button */
 #light-switch {
@@ -357,14 +481,6 @@ body.light-mode .form-container {
     height: 250px;
   }
   
-  h1 {
-    font-size: 32px;
-  }
-  
-  h2 {
-    font-size: 28px;
-  }
-  
   h3 {
     font-size: 22px;
   }
@@ -472,18 +588,31 @@ summary:hover {
 /* Card layout for causes of light pollution */
 .causes-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin: 30px 0;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  grid-template-rows: repeat(2, 1fr); /* Two equal rows */
+  gap: 1vw; /* Space between grid items */
+  margin: 2vw auto;
+}
+
+.causes {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10vw;
+  gap: 1vw;
 }
 
 .cause-card {
   background-color: rgba(35, 25, 66, 0.7);
   border: 1px solid var(--accent-color-medium);
   border-radius: 8px;
-  padding: 20px;
+  padding: 1.5rem;
   transition: all 0.3s ease;
+  width: 75%; /* Ensure it uses the full available width in the grid */
 }
+
+
 
 body.light-mode .cause-card {
   background-color: rgba(255, 255, 255, 0.7);

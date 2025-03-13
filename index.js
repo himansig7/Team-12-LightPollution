@@ -78,3 +78,14 @@ function createStars() {
     document.body.appendChild(star);
   }
 }
+
+const toggleSwitch = document.getElementById('toggle-switch');
+const image = document.querySelector('.light-pollution-img');
+
+toggleSwitch.addEventListener('change', function() {
+  if (toggleSwitch.checked) {
+    image.src = "img/light-polluted-sky1.jpg"; 
+  } else {
+    image.src = 'img/sky1.png';  
+  }
+});
