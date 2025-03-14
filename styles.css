@@ -4,12 +4,11 @@
   position: fixed;
   z-index: 1000;
   top: 0px;
-  right: 0px;
   width: 100%;
   height: 80px;
   justify-content: space-between;
   align-items: center;
-  display: block;
+  display: flex;
 }
 
 a.navbar-menu {
@@ -21,13 +20,13 @@ a.navbar-menu {
 
 .navbar ul li {
   list-style-type: none;
-  float: right;
+  float: left;
   margin: 0px 10px;
   padding: 15px;
 }
 
 .navbar ul li a {
-  margin-top: 10px;
+  margin-top: 25px;
   color: #ffffff;
   display: flex;
   text-decoration: none;
@@ -45,7 +44,7 @@ a.navbar-menu {
 .navbar ul li a.donate {
   background-color: #abcade;
   color: #0d1117;
-  margin-top: 2px;
+  margin-top: 17px;
   padding: 8px 5px;
   border-radius: 50px;
   cursor: pointer;
@@ -611,7 +610,7 @@ body.light-mode .form-container {
   .navbar-menu.active {
     background-color: rgba(0, 0, 0, 0.8);
     top: 100%;
-    right:0px;
+    right: 0;
     opacity: 1;
     transition: all 0.5 ease;
     z-index: 99;
@@ -652,7 +651,7 @@ body.light-mode .form-container {
     position: absolute;
     top: 20%;
     right: 5%;
-    transform: translate(-5%, 20%);
+    transform: translate(5%, 20%);
   }
 
   .navbar-toggle .bar {
