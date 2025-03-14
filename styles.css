@@ -523,7 +523,6 @@ body.light-mode #connect {
 
 .connect-participants {
   width: 45%;
-  padding-right: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 8px;
@@ -693,7 +692,7 @@ body.light-mode .form-container {
   }
   
   .connect-para, .connect-participants {
-    width: 100%;
+    width: 93%;
   }
   
   #connect-form {
@@ -809,8 +808,6 @@ summary:hover {
   transition: all 0.3s ease;
 }
 
-
-
 body.light-mode .cause-card {
   background-color: rgba(255, 255, 255, 0.7);
   border: 1px solid #ccc;
@@ -841,4 +838,24 @@ body.light-mode .cause-card h5 {
   .causes-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/*** Animations  ***
+  Purpose:
+  - Add style rules to enable scroll animations for your website
+***/
+
+.revealable {
+  --reveal-distance: 100px; /* CSS Variable */
+  scroll-margin-top: var(--reveal-distance);
+  opacity: 0;
+  transition: all 2s ease;
+  position: relative;
+  transform: translateY(var(--reveal-distance));
+}
+
+.active {
+  scroll-margin-top: 0;
+  transform: translateY(0);
+  opacity: 1;
 }
