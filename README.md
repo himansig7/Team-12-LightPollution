@@ -24,10 +24,10 @@ This link takes you to the live version of the website. You can explore various 
 
 ## Contact and Credits
 
-This project was developed by Akari, Anagha, Gayathri, Himansi, and Kathy as part of UCSD WIC's activism website project during Winter 2025.
-For further inquiries or contributions, feel free to visit our GitHub profiles:
-- https://github.com/ao100605
-- https://github.com/anagha166
-- https://github.com/gkuniyil
-- https://github.com/himansig7
-- https://github.com/kcharry
+This project was developed by Akari Oh, Anagha Kamath, Gayathri Kuniyil, Himansi Gupta, and Katherine Charry as part of UCSD WIC's activism website project during Winter 2025.
+For further inquiries or contributions, feel free to contact us:
+- a4oh@ucsd.edu
+- ankamath@ucsd.edu
+- gkuniyil@ucsd.edu
+- h4gupta@ucsd.edu
+- kacharry@ucsd.edu
